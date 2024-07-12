@@ -11,7 +11,9 @@
 int main(void)
 {
 	/*
-	 * integer overflow is undefined behaviour
+	 * signed integer overflow is undefined behaviour
+	 * (it can wrap, trap or both depending on the implementation)
+	 * while unsigned integer wraparound is not
 	 */
 	int x, y;
 	x = y = 0;
