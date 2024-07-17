@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <limits.h>
 
-#define	INT_BITS	(sizeof(int) * 8)
+#define	INT_BITS	(sizeof(int) * CHAR_BIT)
 
 unsigned int setbits(unsigned int x, int p, int n, unsigned int y);
 unsigned int invert(unsigned int x, int p, int n);
